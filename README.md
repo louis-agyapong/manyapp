@@ -1,3 +1,3 @@
 # Django ManyToMany Playground
 
-Playing with Django Many to Many Relationships
+A simple demonstration of Django Many to Many Relationships
