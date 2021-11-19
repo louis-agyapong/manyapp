@@ -1,3 +1,3 @@
-# Django Project Template
+# Django ManyToMany Playground
 
-Django project template
+Playing with Django Many to Many Relationships
