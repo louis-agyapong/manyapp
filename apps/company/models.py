@@ -24,6 +24,20 @@ class Programmer(models.Model):
         on_delete=models.CASCADE,
         related_name="programmers",
     )
+    lanugages = models.ManyToManyField(
+        "Language", verbose_name=_("Language"), related_name="programmers"
+    )
 
     def __str__(self):
-        return f"{self.name} works at {self.company}"
+        return f"{self.name} at {self.company}"
+
+
+class Language(models.Model):
+    """
+    languages that a programmer knows
+    """
+
+    name = models.CharField(_("Name"), max_length=100)
+
+    def __str__(self):
+        return self.name
