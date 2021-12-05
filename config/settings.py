@@ -31,6 +31,7 @@ INSTALLED_APPS = [
     "apps.pizza",
     "apps.member",
     "apps.course",
+    "apps.company",
     # External apps
     "django_extensions",
     "rest_framework",
