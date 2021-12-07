@@ -24,7 +24,7 @@ class Programmer(models.Model):
         on_delete=models.CASCADE,
         related_name="programmers",
     )
-    lanugages = models.ManyToManyField(
+    languages = models.ManyToManyField(
         "Language", verbose_name=_("Language"), related_name="programmers"
     )
 
