@@ -32,6 +32,7 @@ INSTALLED_APPS = [
     "apps.member",
     "apps.course",
     "apps.company",
+    "apps.family",
     # External apps
     "django_extensions",
     "rest_framework",
