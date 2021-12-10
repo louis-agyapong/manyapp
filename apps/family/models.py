@@ -4,6 +4,12 @@ from django.utils.translation import gettext_lazy as _
 
 class Person(models.Model):
     name = models.CharField(_("name"), max_length=255)
+    relatives = models.ManyToManyField(
+        "self",
+        verbose_name=_("relatives"),
+        through="FamilyMember",
+        through_fields=("member", "relative"),
+    )
 
     def __str__(self):
         return self.name
