@@ -6,10 +6,9 @@ authors = ["Louis Agyapong <agyapong.louis@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.10.0"
-Django = "^3.1.4"
+Django = "4.0"
 django-debug-toolbar = "^3.2"
 isort = "^5.7.0"
-djangorestframework = "^3.12.2"
 flake8 = "^3.9.0"
 dj-database-url = "^0.5.0"
 python-decouple = "^3.4"

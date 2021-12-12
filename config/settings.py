@@ -35,7 +35,6 @@ INSTALLED_APPS = [
     "apps.family",
     # External apps
     "django_extensions",
-    "rest_framework",
 ]
 
 MIDDLEWARE = [

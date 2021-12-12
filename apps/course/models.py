@@ -9,7 +9,7 @@ class Student(models.Model):
 
 
 class Course(models.Model):
-    name = models.CharField(max_length=20)
+    name = models.CharField(max_length=255)
     students = models.ManyToManyField(
         Student, related_name="courses", through="Enrollment"
     )
