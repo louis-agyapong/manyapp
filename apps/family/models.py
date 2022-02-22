@@ -9,6 +9,7 @@ class Person(models.Model):
         verbose_name=_("relatives"),
         through="FamilyMember",
         through_fields=("member", "relative"),
+        blank=True,
     )
 
     def __str__(self):
@@ -52,3 +53,8 @@ class FamilyMember(models.Model):
 
     def __str__(self):
         return f"{self.member.name} - {self.relative.name}({self.relation.name})"
+
+    class Meta:
+        verbose_name = _("family member")
+        verbose_name_plural = _("family members")
+        app_label = "family_member"
